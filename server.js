@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const privateKey = "important_super_private_secret_key";
+
 app.use(express.json());
 
 app.get('/', (req, res) => {
